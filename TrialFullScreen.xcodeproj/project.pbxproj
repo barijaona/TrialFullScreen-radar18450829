@@ -18,6 +18,7 @@
 		3AC5754719B3A3C700923F17 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5752619B3A3C600923F17 /* Cocoa.framework */; };
 		3AC5754F19B3A3C700923F17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AC5754D19B3A3C700923F17 /* InfoPlist.strings */; };
 		3AC5755119B3A3C700923F17 /* TrialFullScreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5755019B3A3C700923F17 /* TrialFullScreenTests.m */; };
+		3AC5755D19B3A54700923F17 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5755C19B3A54700923F17 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		3AC5754C19B3A3C700923F17 /* TrialFullScreenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrialFullScreenTests-Info.plist"; sourceTree = "<group>"; };
 		3AC5754E19B3A3C700923F17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3AC5755019B3A3C700923F17 /* TrialFullScreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrialFullScreenTests.m; sourceTree = "<group>"; };
+		3AC5755C19B3A54700923F17 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC5755D19B3A54700923F17 /* WebKit.framework in Frameworks */,
 				3AC5752719B3A3C600923F17 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +108,7 @@
 		3AC5752819B3A3C600923F17 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3AC5755C19B3A54700923F17 /* WebKit.framework */,
 				3AC5752919B3A3C600923F17 /* AppKit.framework */,
 				3AC5752A19B3A3C600923F17 /* CoreData.framework */,
 				3AC5752B19B3A3C600923F17 /* Foundation.framework */,
@@ -386,6 +390,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrialFullScreen/TrialFullScreen-Prefix.pch";
 				INFOPLIST_FILE = "TrialFullScreen/TrialFullScreen-Info.plist";
@@ -399,6 +407,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrialFullScreen/TrialFullScreen-Prefix.pch";
 				INFOPLIST_FILE = "TrialFullScreen/TrialFullScreen-Info.plist";
